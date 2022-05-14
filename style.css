@@ -1,0 +1,123 @@
+*{
+	margin:0;
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 16px;
+}
+
+body{
+	padding: 0;
+	background-color: #3216B0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color:white;
+	font-family: Jura,sans-serif;
+}
+
+.container{
+	background-color: #0ACF00;
+	width: 45vw;
+	height: 70vh;
+	border-radius: 20px;
+	padding: 60px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	
+}
+ 	.container h1{
+ 		text-align: center;
+ 		font-size: 2rem;
+ 		font-weight: 700;
+ 	}
+
+ 	.container p{
+ 		font-size: 1.3rem;
+ 		padding-top:30px;
+ 		font-weight: 400;
+ 	}
+
+ 	.container span{
+ 		font-weight: 600;
+ 		font-size: 1.35rem;
+ 	}
+
+.inputBox{
+ 	display: flex;
+ 	flex-direction: column;
+ 	justify-content: space-around;
+ 	height: 70%;
+}
+
+	.inputBox label{
+		font-size:1.2rem;
+		text-align: center; 
+		padding: 5px 15px 0 0 ;
+		width:400px;
+		text-align: left;
+	}
+
+	.inputBlock{
+		width:auto;
+		display: flex;
+	}
+
+	.inputBox input{
+		width: 100%;
+		outline: none;
+		border:none;
+		padding: 8px;
+		font-family: Jura,sans-serif;
+		font-size:1.15rem;
+	}
+
+	.inputBlock input[type="button"]{
+		width: 50%;
+	}
+
+.itog{
+	width: auto;
+	display: flex;
+
+}
+
+	.itog p{
+		font-size: 1.2rem;
+		padding: 0 15px 0 0;
+	}
+
+	.itog input{
+		height:30px;
+		width: 200px;
+		background-color: #3216B0;
+		color:white;
+		font-size: 1.5rem;
+	}
+
+@media (max-width: 1360px){
+	.container{
+		width:55vw;
+	}
+}
+
+@media (max-width: 1120px){
+	html{
+		font-size: 14px;
+	}
+	.container{
+		width: 60vw;
+	}
+}
+
+@media (max-width: 940px){
+	.container{
+		width:100vw;
+		height: 100vh;
+		border-radius: 0;
+	}
+}

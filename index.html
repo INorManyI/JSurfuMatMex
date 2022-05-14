@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Hamming Coding and Decoding</title>	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link type="text/css" rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="Hamming.js"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+ <div class="container">
+ 	<h1>Hamming Coding and Decoding</h1>
+ 	<p>
+ 		<span></span> 
+ 	</p>
+ 	<div class="inputBox">
+ 		<div class="inputBlock">
+ 			<label>Original Message:</label>
+ 			<input type="text" id="originalMessage">
+			<input type="button" onclick="code()" value="Coder">
+ 		</div>
+
+ 		<div class="inputBlock">
+ 			<label>Coded Message:</label>
+			<input type="text" id="codedMessage">
+			<input type="button" onclick="decode()" value="Decoder">	
+ 		</div>
+ 				
+ 		<div class="itog">
+ 			<p>DecodedMessage:</p>
+			<input type="text" id="decodedMessage" readonly="">
+ 		</div>
+		
+		<span id='errors'></span> 
+		
+		<span id='check'></span>
+
+ 	</div>	
+ </div>
+</body>
+</html>											
